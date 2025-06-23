@@ -1,6 +1,8 @@
 *** Settings ***
 
 *** Variables ***
+#URLS
+${URL_Pagina_Pagina_Inicial}    https://only-cursos.vercel.app/aluno
 #Credenciais
 ${CAMINHO_JSON}    ../User_credentials.json
 ${LinkNavegador}        https://only-cursos.vercel.app/
@@ -29,6 +31,7 @@ ${Login_link_para_Cadastro}    xpath=/html/body/div/div/div/p[2]/a
 ${Login_link_para_Recupera_Senha}    xpath=/html/body/div/div/div/p[1]/a
 #Menu
 ${Menu_Meus_Dados}    xpath=/html/body/div/div/nav/div/ul/li[4]/a/span[2]
+${Menu_Cursos}    xpath=/html/body/div/div/nav/div/ul/li[2]/a/span[2]
 
 
 
@@ -47,3 +50,5 @@ ${Meus_Dados_Input_Senha_Nova}    xpath=/html/body/div/div[2]/div/input[2]
 ${Meus_Dados_Botao_Salvar_Nova_Senha}    xpath=/html/body/div/div[2]/div/div/button[2]
 ${Meus_Dados_Mensagem_de_Confirmacao_Senha_atualizada}    xpath=/html/body/div/div[2]/div/div[1]
 
+#Tela Cursos
+${Cursos_Grade_de_Cursos_Disponiveis}    xpath=/html/body/div/main/section/div
